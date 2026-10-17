@@ -1,0 +1,16 @@
+{
+  "name": "gang-of-dusters-god",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "node scripts/clean.mjs && eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7"
+  }
+}

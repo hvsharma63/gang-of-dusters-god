@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+title: Owner knowledge, mileage and service notes
+description: Duster owner experiences and reported fuel economy.
+activePath: /knowledge/
+permalink: /knowledge/index.html
+---
+<section class="page-hero compact-hero knowledge-hero" data-reveal>
+  <div>
+    <p class="eyebrow">Owner knowledge</p>
+    <h1>Notes from<br><em>Duster owners.</em></h1>
+    <p class="hero-lede">What owners have learned, shared for the next person.</p>
+  </div>
+  <figure class="knowledge-hero-image">
+    <img src="/images/renault-duster-2026-reveal.webp" alt="Official Renault India image of the Duster interior" fetchpriority="high">
+    <figcaption>Renault India · official image</figcaption>
+  </figure>
+</section>
+
+<section class="section-wrap section-block" data-reveal>
+  <div class="section-heading">
+    <div><p class="eyebrow">14 owner notes</p><h2>Things owners<br><em>have discussed.</em></h2></div>
+  </div>
+  <div class="knowledge-list">
+    {% for note in site.ownerNotes %}
+    <article class="knowledge-card">
+      <div class="knowledge-body">
+        <h2>{{ note.title }}</h2><p>{{ note.summary }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <aside class="knowledge-invite" data-reveal>
+    <div>
+      <p class="eyebrow">The conversation continues</p>
+      <p>These notes are only a starting point. Join the community to hear the real insight behind every story.</p>
+    </div>
+    <a class="button button-primary" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer">Join the WhatsApp community <span aria-hidden="true">↗</span></a>
+  </aside>
+</section>
+
+<section class="mileage-section" id="mileage" data-reveal>
+  <div class="section-wrap section-block">
+    <div class="section-heading">
+      <div><p class="eyebrow">Four individual reports</p><h2>Reported fuel<br><em>economy.</em></h2></div>
+      <p class="section-aside">Three individual reports, from different routes and methods. They are not directly comparable.</p>
+    </div>
+    <div class="mileage-chart" aria-label="Chart of owner-reported fuel economy">
+      <div class="chart-axis" aria-hidden="true"><span>0</span><span>5</span><span>10</span><span>15</span><span>20 km/l</span></div>
+      {% for report in site.mileageChart %}
+      <article class="chart-report">
+        <h3>{{ report.vehicle }}</h3>
+        {% for figure in report.figures %}
+        <div class="chart-line">
+          <span class="chart-label">{{ figure.label }}</span>
+          <span class="chart-track" aria-hidden="true"><span class="chart-bar" style="--bar-width: {{ figure.scale }}%"></span></span>
+          <strong>{{ figure.value }}</strong>
+        </div>
+        {% endfor %}
+      </article>
+      {% endfor %}
+    </div>
+    <p class="chart-caption">Bars use a 0–20 km/l scale and end at the reported figure (or upper end of a range). They are not a ranking.</p>
+    <p class="notice">Every claim has a different story. Route, variant, driving and measurement all matter.</p>
+  </div>
+</section>

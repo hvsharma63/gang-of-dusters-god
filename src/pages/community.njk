@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+title: The WhatsApp owner community
+description: Join Gang of Dusters, an unofficial owner-led WhatsApp community for shared learning, peer support and Duster drives.
+activePath: /community/
+permalink: /community/index.html
+---
+<section class="page-hero community-hero" data-reveal>
+  <p class="eyebrow">Unofficial · owner-led</p>
+  <h1>A WhatsApp group<br><em>for Duster owners.</em></h1>
+  <p class="hero-lede">A place to ask ownership questions, compare experiences and plan drives with other Duster owners.</p>
+  <a class="button button-primary" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer">Join the WhatsApp community <span aria-hidden="true">↗</span></a>
+  <p class="microcopy">Opens WhatsApp · Unofficial, owner-led community</p>
+</section>
+
+<section class="section-wrap section-block" data-reveal>
+  <div class="section-heading">
+    <div><p class="eyebrow">Why an owner community matters</p><h2>Some answers come<br><em>from shared experience.</em></h2></div>
+    <p class="section-aside">The owner manual and Renault remain the authority for specifications, safety and service. Owners can add useful context about their own experience.</p>
+  </div>
+  <div class="card-grid community-benefits">
+    {% for principle in site.communityPrinciples %}
+    <article class="note-card">
+      <div class="card-topline"><span class="card-number">0{{ loop.index }}</span><span class="evidence">Why we’re here</span></div>
+      <h3>{{ principle.title }}</h3><p>{{ principle.description }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="feature-band community-topics" data-reveal>
+  <div class="section-wrap feature-grid">
+    <div><p class="eyebrow">Conversation topics</p><h2>Separate topics.<br><em>Shared community.</em></h2>
+      <p>Separate groups cover common ownership topics.</p>
+    </div>
+    <ul class="community-group-list">
+      {% for group in site.communityGroups %}<li><span>0{{ loop.index }}</span>{{ group }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section-wrap section-block join-steps" data-reveal>
+  <div><p class="eyebrow">How to join</p><h2>Owners and<br><em>people awaiting delivery.</em></h2>
+    <p class="body-copy">The invite message welcomes recent buyers, people waiting for delivery and anyone who wants to connect with Duster owners. Older-generation Duster owners are welcome too.</p>
+    <a class="button button-primary" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer">Open WhatsApp invite <span aria-hidden="true">↗</span></a>
+  </div>
+  <ol class="steps-list">
+    <li><span>01</span><div><strong>Tap the invite</strong><p>Review WhatsApp’s community details before joining.</p></div></li>
+    <li><span>02</span><div><strong>Say hello</strong><p>Share only what you’re comfortable sharing—your Duster, variant and general region are useful, not required.</p></div></li>
+    <li><span>03</span><div><strong>Ask, learn, contribute</strong><p>Keep advice respectful, give context, and let others know when something is only your own experience.</p></div></li>
+  </ol>
+</section>
+
+<section class="community-photo" data-reveal>
+  <img src="/images/renault-duster-2026-key-visual-hd.jpg" alt="Official Renault India image of the Duster on a gravel road" width="2560" height="1920" loading="lazy" decoding="async">
+  <div><p class="eyebrow">Share the miles</p><h2>Good roads are<br><em>better together.</em></h2></div>
+</section>
+<section class="section-wrap policy-callout" data-reveal>
+  <div class="policy-icon">i</div><div>
+    <h3>A community is support—not a substitute for service.</h3>
+    <p>Member experiences can help you ask better questions, but they aren’t professional diagnosis, official Renault guidance or a guarantee of an outcome. For safety concerns, warning lights, warranty questions or repairs, contact Renault or an authorized service centre. Please protect your privacy and never share sensitive personal or vehicle documents in public.</p>
+  </div>
+</section>

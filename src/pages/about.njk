@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: About Gang of Dusters
+description: Why Gang of Dusters began and where the owner community is headed.
+activePath: /about/
+permalink: /about/index.html
+---
+<section class="page-hero compact-hero about-hero" data-reveal>
+  <p class="eyebrow">Unofficial. Owner-led. Owner-first.</p>
+  <h1>For Duster owners.<br><em>By the community.</em></h1>
+  <p class="hero-lede">A place for owners to share what they learn about the Duster.</p>
+</section>
+
+<section class="about-photo" data-reveal>
+  <img src="/images/renault-duster-2026-key-visual-hd.jpg" alt="Official Renault India image of the Duster on a gravel road" width="2560" height="1920" loading="lazy" decoding="async">
+  <p>One idea. Shared on Reddit.<br><strong>100 owners and counting.</strong></p>
+</section>
+<section class="section-wrap section-block about-grid" data-reveal>
+  <article class="about-panel"><p class="eyebrow">Why it started</p><h2>One idea:<br><em>reach more owners.</em></h2><p>It began when the WhatsApp link was shared on Reddit: bring Duster owners and enthusiasts together so their first-hand knowledge could be shared and passed on.</p></article>
+  <article class="about-panel"><p class="eyebrow">What this is</p><h2>Owner-first.<br><em>Unofficial.</em></h2><p>Owners share what they have learned. For specifications, safety and service, check Renault and your owner’s manual. This community is not affiliated with Renault.</p></article>
+</section>
+
+<section class="section-wrap section-block roadmap-section" data-reveal>
+  <div class="section-heading roadmap-heading">
+    <div><p class="eyebrow">Roadmap · underway</p><h2>Where we started.<br><em>Where we’re going.</em></h2></div>
+    <p class="section-aside">Keep owners’ first-hand experience useful after the conversation ends.</p>
+  </div>
+  <div class="roadmap">
+    <article class="roadmap-step">
+      <span class="roadmap-status">Started</span>
+      <time class="roadmap-date" datetime="2026-09">September 2026</time>
+      <h3>Bring owners together</h3>
+      <p>The Reddit link brought the first owners together. The community now has 100 members.</p>
+    </article>
+    <article class="roadmap-step roadmap-current">
+      <span class="roadmap-status">Underway</span>
+      <time class="roadmap-date" datetime="2026-10">October 2026</time>
+      <h3>Keep experience moving</h3>
+      <p>Keep first-hand experience moving. Spot issues early and share what works before useful details get lost.</p>
+    </article>
+    <article class="roadmap-step">
+      <span class="roadmap-status">Next</span>
+      <span class="roadmap-date">2027 onward</span>
+      <h3>Build a useful knowledge base</h3>
+      <p>Carry forward useful reports, practical fixes and variant counts, with the context that makes them useful.</p>
+    </article>
+  </div>
+  <p class="roadmap-vision">The vision: a stronger owner network and a bigger presence for the Duster.</p>
+</section>
+<script>
+  const roadmap = document.querySelector(".roadmap");
+  if (roadmap && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        roadmap.classList.add("is-animating");
+        observer.disconnect();
+      }
+    }, { threshold: 0.35 });
+    observer.observe(roadmap);
+  }
+</script>
+
+<section class="section-wrap policy-callout" data-reveal>
+  <div>
+    <h3>Share an experience</h3>
+    <p>Join the WhatsApp community to contribute an owner report or suggest a correction. Personal details stay out of public notes.</p>
+  </div>
+</section>
+<section class="section-wrap final-about-cta"><a class="button button-primary" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer">Join the owner community <span aria-hidden="true">↗</span></a></section>

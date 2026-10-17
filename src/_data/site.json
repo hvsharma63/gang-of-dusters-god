@@ -1,0 +1,229 @@
+{
+  "communityInvite": "https://chat.whatsapp.com/GAsOCuuMhN045uhUFl3Ip3",
+  "communityPrinciples": [
+    {
+      "title": "Ask other owners",
+      "description": "Talk with people who drive a Duster about day-to-day ownership."
+    },
+    {
+      "title": "Compare experience",
+      "description": "Discuss mileage, servicing and accessories before making a decision."
+    },
+    {
+      "title": "Meet nearby owners",
+      "description": "Find people in your area for local questions, meetups and drives."
+    },
+    {
+      "title": "Keep useful answers",
+      "description": "Good owner advice can become a note others can find and use."
+    }
+  ],
+  "communityGroups": [
+    "General ownership and questions",
+    "Mileage and fuel experiences",
+    "Repairs, issues and authorized service-centre experiences",
+    "Accessories and modifications",
+    "Trips and meetups",
+    "Community announcements and moderation"
+  ],
+  "ownerNotes": [
+    {
+      "title": "City and highway fuel economy varies widely",
+      "summary": "Owners have reported city results from roughly 6.5–14 km/l and highway or long-run results from roughly 13–19 km/l. Traffic, speed, terrain, fuel, transmission and measurement method differ, so these are examples—not an expected range or guarantee.",
+      "sourceChat": "Mileage / Fuel; General",
+      "tags": ["mileage", "conditions matter", "multiple variants"],
+      "evidence": "Several owner reports",
+      "caution": "Do not compare results without matching driving conditions and measurement method. The figures are unverified owner submissions."
+    },
+    {
+      "title": "MID readings and tank-to-tank results are not interchangeable",
+      "summary": "Members discussed differences between the dashboard MID estimate and manually calculated tank-to-tank fuel economy. Some journey reports include both values.",
+      "sourceChat": "Mileage / Fuel",
+      "tags": ["mileage", "measurement"],
+      "evidence": "Several owner reports",
+      "caution": "The chat includes broad claims about accuracy. Use a consistent fill-up method and consult the owner manual; this site does not certify either reading."
+    },
+    {
+      "title": "Door sounds and cabin rattles have more than one reported cause",
+      "summary": "Owners described door rattling or squeaking, different checks, and different attempted remedies. Some cases were unresolved or required a return visit to an authorized service centre.",
+      "sourceChat": "Repairs / Issues / ASC; General",
+      "tags": ["reported issue", "cabin noise", "service"],
+      "evidence": "Several owner reports",
+      "caution": "These anecdotes do not establish a common defect or an approved repair. Ask an authorized service centre to inspect persistent or safety-related symptoms."
+    },
+    {
+      "title": "Pedal vibration, brake noise and gear feel are owner-reported concerns",
+      "summary": "The chats include reports of pedal vibration under acceleration, brake noise or vibration, and stiff manual gear shifts. Reports differ by vehicle and some owners were arranging an ASC inspection.",
+      "sourceChat": "Repairs / Issues / ASC; General",
+      "tags": ["reported issue", "brakes", "manual transmission"],
+      "evidence": "Owner report",
+      "caution": "A chat message is not a diagnosis. Have braking or control concerns inspected promptly by Renault/ASC; do not rely on this page to troubleshoot them."
+    },
+    {
+      "title": "One owner raised an unexpected ADAS braking concern",
+      "summary": "A member described unexpected active braking and raised the experience with the group. There is no independent verification, technical diagnosis or confirmed fix.",
+      "sourceChat": "General",
+      "tags": ["ADAS", "safety-critical", "single report"],
+      "evidence": "Owner report",
+      "caution": "This is not evidence of a widespread fault and is not a troubleshooting guide. Report unexpected braking to Renault/ASC promptly and follow the owner manual."
+    },
+    {
+      "title": "Air-conditioning and wireless charging feedback is mixed",
+      "summary": "Members compared A/C behaviour across trims and described phone-dependent wireless charging performance. The discussion includes an unverified service-update explanation for an A/C concern.",
+      "sourceChat": "Repairs / Issues / ASC; Admins",
+      "tags": ["reported issue", "comfort", "electronics"],
+      "evidence": "Unverified — check official source",
+      "caution": "No software campaign or trim-specific feature conclusion is confirmed here. Ask an authorized service centre to check the vehicle and applicable updates."
+    },
+    {
+      "title": "Accessory fit and finish matter more than the label",
+      "summary": "Owners discussed dash cameras, full-coverage floor mats, magnetic shades, coatings and paint protection. Feedback includes personal preferences and prices that may have changed.",
+      "sourceChat": "Accessories; General; MODs",
+      "tags": ["accessories", "fitment", "owner opinion"],
+      "evidence": "Owner report",
+      "caution": "Check fitment for your exact variant and confirm legal, warranty and safety implications before buying or installing anything."
+    },
+    {
+      "title": "Specific accessory choices are individual reports, not endorsements",
+      "summary": "Owners mentioned a dual-channel dash camera, TPE floor mats intended to cover the door-sill area, and magnetic window shades. One owner-reported price for mats was about ₹4,800 in September 2026; it is historical, not a current quote.",
+      "sourceChat": "Accessories",
+      "tags": ["dash camera", "floor mats", "window shades", "historical price"],
+      "evidence": "Owner report",
+      "caution": "Confirm exact vehicle fit, current price, installation and warranty impact with the seller and manufacturer. No product is endorsed by the community."
+    },
+    {
+      "title": "Window film and coating discussions need current checks",
+      "summary": "Members discussed heat-rejecting films, magnetic shades, paint coatings and PPF, including conflicting assumptions about local enforcement and product value.",
+      "sourceChat": "Accessories",
+      "tags": ["window film", "paint protection", "local law", "warranty"],
+      "evidence": "Discussion only",
+      "caution": "The chat is not legal or product guidance. Check current local rules and written warranty terms before installation or purchase."
+    },
+    {
+      "title": "Fuel-grade and additive claims were not independently verified",
+      "summary": "Members compared regular and premium petrol and speculated about additives, engine cleanliness and mileage. These conversations do not establish that a particular fuel improves economy or cleans components.",
+      "sourceChat": "Mileage / Fuel; Repairs / Issues / ASC",
+      "tags": ["fuel", "additives", "unverified claim"],
+      "evidence": "Unverified — check official source",
+      "caution": "Use fuel that meets the vehicle manual’s requirements. Do not rely on group speculation for engine or fuel-system advice."
+    },
+    {
+      "title": "Fuel-capacity and reserve advice needs a manual reference",
+      "summary": "A specific tank/reserve figure and refuelling advice were circulated in the fuel chat, but no manual citation or independent verification accompanied them.",
+      "sourceChat": "Mileage / Fuel",
+      "tags": ["fuel capacity", "reserve", "manual check"],
+      "evidence": "Unverified — check official source",
+      "caution": "Check the owner manual or Renault/ASC for capacity and refuelling guidance; the chat does not establish pump-damage risk or repair cost."
+    },
+    {
+      "title": "Spare-wheel delivery and dealer follow-up came up in ownership discussions",
+      "summary": "Owners discussed waiting for a spare wheel/stepney and varied dealership experiences, including delays and follow-ups.",
+      "sourceChat": "General",
+      "tags": ["ownership", "delivery", "dealer experience"],
+      "evidence": "Owner report",
+      "caution": "This is not a statement of current supply status or a promise of delivery time. Confirm your order status with your dealer."
+    },
+    {
+      "title": "The group is already organized around owner needs",
+      "summary": "Admin conversations describe an unofficial owner-led community with focused conversations for ownership, mileage, repairs, accessories and trips, plus onboarding and moderation.",
+      "sourceChat": "Admins; MODs",
+      "tags": ["community", "moderation", "owner-first"],
+      "evidence": "Owner report"
+    },
+    {
+      "title": "Meetups and drives are member-organized",
+      "summary": "Members shared meetup and route ideas. Check the community for current plans.",
+      "sourceChat": "Trips; Admins",
+      "tags": ["trips", "meetups", "community"],
+      "evidence": "Owner report",
+      "caution": "Confirm dates, route conditions and permissions before sharing plans."
+    }
+  ],
+  "mileageReports": [
+    {
+      "vehicle": "1.3 MT; trim not stated in this report",
+      "result": "8–9 km/l city; 18–19 km/l highway",
+      "method": "Tank-to-tank; same station and auto-cut reported",
+      "conditions": "Regular E20 petrol reported; route and sample size not stated",
+      "sourceChat": "Mileage / Fuel",
+      "evidence": "Single owner report"
+    },
+    {
+      "vehicle": "1.3 Turbo DCT",
+      "result": "6.5–7 km/l city; 14.5–15 km/l sedate highway; 10.5–11 km/l when driven hard",
+      "method": "Tank-to-tank",
+      "conditions": "Bengaluru commute; highway speed and traffic affect results; XP95 and regular fuel both mentioned",
+      "sourceChat": "General",
+      "evidence": "Single owner report"
+    },
+    {
+      "vehicle": "DCT",
+      "result": "13.5 km/l tank-to-tank; MID showed 16.3 km/l",
+      "method": "Tank-to-tank and MID reported",
+      "conditions": "Approx. 1,730 km mountain circuit; slow, rough section and water crossings noted",
+      "sourceChat": "Mileage / Fuel",
+      "evidence": "Single owner report"
+    }
+  ],
+  "mileageChart": [
+    {
+      "vehicle": "1.3 MT",
+      "figures": [
+        { "label": "City", "value": "8–9 km/l", "scale": 45 },
+        { "label": "Highway", "value": "18–19 km/l", "scale": 95 }
+      ]
+    },
+    {
+      "vehicle": "1.3 Turbo DCT",
+      "figures": [
+        { "label": "City", "value": "6.5–7 km/l", "scale": 35 },
+        { "label": "Sedate highway", "value": "14.5–15 km/l", "scale": 75 },
+        { "label": "Driven hard", "value": "10.5–11 km/l", "scale": 55 }
+      ]
+    },
+    {
+      "vehicle": "DCT",
+      "figures": [
+        { "label": "Tank-to-tank", "value": "13.5 km/l", "scale": 67.5 },
+        { "label": "MID", "value": "16.3 km/l", "scale": 81.5 }
+      ]
+    }
+  ],
+  "sourceInventory": [
+    {
+      "group": "General",
+      "coverage": "Owner introductions, variant questions, dealer/service experiences, delivery/spare-wheel discussions, comparisons and safety-related reports.",
+      "tags": ["variant and purchase questions", "ownership", "dealer and delivery", "safety report"]
+    },
+    {
+      "group": "Admins",
+      "coverage": "Community purpose and structure, onboarding, member discussions, meetups and service experiences.",
+      "tags": ["owner-first purpose", "onboarding", "subgroups", "meetups"]
+    },
+    {
+      "group": "MODs",
+      "coverage": "Cosmetic ideas and visual inspiration; not verified fitment or modification guidance.",
+      "tags": ["visual ideas", "cosmetic mods", "unverified fitment"]
+    },
+    {
+      "group": "Accessories",
+      "coverage": "Dash cameras, mats, shades/films, coatings, product links and owner preferences.",
+      "tags": ["dash cameras", "floor mats", "shades and films", "coatings", "legal/warranty checks"]
+    },
+    {
+      "group": "Mileage / Fuel",
+      "coverage": "City/highway reports, fuel choices, MID versus tank-to-tank, trip reports and hybrid speculation.",
+      "tags": ["city/highway economy", "MID vs tank-to-tank", "fuel grades", "route conditions", "hybrid discussion"]
+    },
+    {
+      "group": "Repairs / Issues / ASC",
+      "coverage": "Reported noises, vibration, gear feel, A/C, wireless charging, service-centre visits and unresolved theories.",
+      "tags": ["door/cabin noise", "brakes and pedals", "gear feel", "A/C and charging", "ASC outcomes"]
+    },
+    {
+      "group": "Trips",
+      "coverage": "Member-planned meetups, routes and regional drive interest; past events are historical.",
+      "tags": ["meetups", "route ideas", "long drives", "regional connections", "historical events"]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description }}">
+    <meta name="theme-color" content="#10251f">
+    <title>{{ title }} · Gang of Dusters</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Gang of Dusters home">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span class="brand-name">Gang of <strong>Dusters</strong><small>Owner-first community</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/" {% if activePath == "/" %}aria-current="page" class="active"{% endif %}>Home</a>
+        <a href="/community/" {% if activePath == "/community/" %}aria-current="page" class="active"{% endif %}>Community</a>
+        <a href="/knowledge/" {% if activePath == "/knowledge/" %}aria-current="page" class="active"{% endif %}>Knowledge</a>
+        <a href="/about/" {% if activePath == "/about/" %}aria-current="page" class="active"{% endif %}>About</a>
+      </nav>
+      <a class="header-join" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer"><span>Join WhatsApp</span><span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="/">
+        <span class="brand-mark">G</span>
+        <span>Gang of <strong>Dusters</strong><small>Unofficial owner community</small></span>
+      </a>
+      <p>Owner experience, shared carefully. Not affiliated with Renault.</p>
+      <a href="/community/">Join the community <span aria-hidden="true">↗</span></a>
+    </footer>
+    <script>
+      const revealElements = document.querySelectorAll("[data-reveal]");
+      if ("IntersectionObserver" in window) {
+        document.body.classList.add("js-motion");
+        const revealObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealElements.forEach(element => {
+          const bounds = element.getBoundingClientRect();
+          if (bounds.top < window.innerHeight && bounds.bottom > 0) {
+            element.classList.add("is-visible");
+          } else {
+            revealObserver.observe(element);
+          }
+        });
+      } else {
+        revealElements.forEach(element => element.classList.add("is-visible"));
+      }
+    </script>
+  </body>
+</html>
