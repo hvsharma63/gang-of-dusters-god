@@ -33,6 +33,8 @@ Official setup and current plan limits:
 - [Cloudflare Pages Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/)
 - [Cloudflare Pages limits](https://developers.cloudflare.com/pages/platform/limits/)
 
+If deploying as a Cloudflare Worker instead of using Pages Git integration, use `npm run build` as the build command and `npx wrangler deploy` as the deploy command. The checked-in `wrangler.jsonc` points Wrangler at Eleventy's `dist/` output; do not configure `_site` as the assets directory.
+
 ## Managing blog posts later
 
 Keep Eleventy as the static site generator. When the blog is ready, add posts as Markdown files and configure [Pages CMS](https://pagescms.org/docs/) with a `.pages.yml` at the repository root. Pages CMS edits files in GitHub; it does not replace Eleventy or require a separate content database. A change saved by the CMS can trigger a Cloudflare build and deploy. Review CMS access and service terms when setting it up.
