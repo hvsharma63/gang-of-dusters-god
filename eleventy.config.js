@@ -4,6 +4,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('src/styles/');
 
   return {
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || '/',
     dir: {
       input: 'src',
       includes: '_includes',

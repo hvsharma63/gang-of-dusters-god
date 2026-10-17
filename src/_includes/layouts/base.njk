@@ -6,21 +6,21 @@
     <meta name="description" content="{{ description }}">
     <meta name="theme-color" content="#10251f">
     <title>{{ title }} · Gang of Dusters</title>
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/site.css">
+    <link rel="stylesheet" href="{{ '/styles/global.css' | url }}">
+    <link rel="stylesheet" href="{{ '/styles/site.css' | url }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Gang of Dusters home">
+      <a class="brand" href="{{ '/' | url }}" aria-label="Gang of Dusters home">
         <span class="brand-mark" aria-hidden="true">G</span>
         <span class="brand-name">Gang of <strong>Dusters</strong><small>Owner-first community</small></span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="/" {% if activePath == "/" %}aria-current="page" class="active"{% endif %}>Home</a>
-        <a href="/community/" {% if activePath == "/community/" %}aria-current="page" class="active"{% endif %}>Community</a>
-        <a href="/knowledge/" {% if activePath == "/knowledge/" %}aria-current="page" class="active"{% endif %}>Knowledge</a>
-        <a href="/about/" {% if activePath == "/about/" %}aria-current="page" class="active"{% endif %}>About</a>
+        <a href="{{ '/' | url }}" {% if activePath == "/" %}aria-current="page" class="active"{% endif %}>Home</a>
+        <a href="{{ '/community/' | url }}" {% if activePath == "/community/" %}aria-current="page" class="active"{% endif %}>Community</a>
+        <a href="{{ '/knowledge/' | url }}" {% if activePath == "/knowledge/" %}aria-current="page" class="active"{% endif %}>Knowledge</a>
+        <a href="{{ '/about/' | url }}" {% if activePath == "/about/" %}aria-current="page" class="active"{% endif %}>About</a>
       </nav>
       <a class="header-join" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer"><span>Join WhatsApp</span><span aria-hidden="true">↗</span></a>
     </header>
@@ -28,12 +28,12 @@
       {{ content | safe }}
     </main>
     <footer class="site-footer">
-      <a class="brand brand-footer" href="/">
+      <a class="brand brand-footer" href="{{ '/' | url }}">
         <span class="brand-mark">G</span>
         <span>Gang of <strong>Dusters</strong><small>Unofficial owner community</small></span>
       </a>
       <p>Owner experience, shared carefully. Not affiliated with Renault.</p>
-      <a href="/community/">Join the community <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/community/' | url }}">Join the community <span aria-hidden="true">↗</span></a>
     </footer>
     <script>
       const revealElements = document.querySelectorAll("[data-reveal]");

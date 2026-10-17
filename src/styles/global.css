@@ -420,7 +420,7 @@ h1 em, h2 em { font-style: italic; }
 .notice { border-left: 3px solid #778b54; font-size: .85rem; }
 
 .community-hero { position: relative; min-height: 530px; overflow: hidden; }
-.community-hero::after { position: absolute; top: 0; right: 0; bottom: 0; width: 50%; background: linear-gradient(90deg, var(--forest), #10251f35 80%), url("/images/renault-duster-2026-reveal.webp") center / cover; opacity: .62; content: ""; }
+.community-hero::after { position: absolute; top: 0; right: 0; bottom: 0; width: 50%; background: linear-gradient(90deg, var(--forest), #10251f35 80%), url("../images/renault-duster-2026-reveal.webp") center / cover; opacity: .62; content: ""; }
 .community-hero > * { position: relative; z-index: 1; }
 .community-topics { background: #233a2f; }
 .community-benefits { gap: clamp(1.5rem, 4vw, 4rem); }

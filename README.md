@@ -17,27 +17,29 @@ Build the static site into `dist/`:
 npm run build
 ```
 
-## Free hosting on Cloudflare Pages
+## Free hosting on GitHub Pages
 
-Cloudflare Pages can build this Eleventy project from a GitHub repository and publish the generated `dist/` directory. The free `*.pages.dev` address does not require buying a domain.
+The included GitHub Actions workflow builds the Eleventy site into `dist/` and deploys it to GitHub Pages. The free `github.io` address does not require buying a domain. GitHub Pages on GitHub Free requires the repository to be public, so do not put private source material or credentials in this repository.
 
-1. Keep `Group Conversations/` private. It is excluded in `.gitignore`; do not remove that rule or upload the WhatsApp exports.
-2. Create a GitHub repository and push the site source. A private repository is supported and is the safer default for this project.
-3. In Cloudflare, open **Workers & Pages**, choose **Create application**, then **Pages** and **Connect to Git**. Authorize the repository and select its production branch.
-4. In the build settings, set the build command to `npm run build` and the build output directory to `dist`. Leave the root directory at the repository root.
-5. Deploy and check the generated `*.pages.dev` site. Cloudflare creates preview deployments for other branches.
+1. Keep `Group Conversations/` private. It is excluded in `.gitignore`; do not remove that rule or upload the WhatsApp exports. Review the files being pushed before making the repository public.
+2. Create a **public** GitHub repository and push the site source. Keep any private chat exports and personal information out of the repository.
+3. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**.
+4. Push to the repository's default branch. The workflow in `.github/workflows/pages.yml` installs dependencies, builds the site, and deploys it. Pull requests build the site but do not publish it.
+5. After the workflow succeeds, find the published URL under **Settings → Pages**. A project repository uses `https://OWNER.github.io/REPOSITORY/`; a repository named `OWNER.github.io` uses `https://OWNER.github.io/`.
 
-The Pages free plan currently documents 500 builds per month, up to 20,000 files per site, and a 25 MiB per-file limit. Limits and plan terms can change. The existing high-resolution Renault image is below the file-size limit. A custom domain is optional and domain registration generally costs money; the hosting recommendation assumes using the free `pages.dev` address.
+The workflow sets Eleventy's path prefix automatically, so internal links and assets work under the repository URL. No custom domain or paid hosting feature is needed. GitHub Pages limits and terms can change; check GitHub's current documentation before publishing.
 
-Official setup and current plan limits:
-- [Cloudflare Pages Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/)
-- [Cloudflare Pages limits](https://developers.cloudflare.com/pages/platform/limits/)
+Official setup and usage information:
+- [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart)
+- [GitHub Pages usage limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 
-If deploying as a Cloudflare Worker instead of using Pages Git integration, use `npm run build` as the build command and `npx wrangler deploy` as the deploy command. The checked-in `wrangler.jsonc` points Wrangler at Eleventy's `dist/` output; do not configure `_site` as the assets directory.
+### Optional: deploy as a Cloudflare Worker
+
+For a Worker deployment instead, use `npm run build` as the build command and `npx wrangler deploy` as the deploy command. The checked-in `wrangler.jsonc` points Wrangler at Eleventy's `dist/` output. Cloudflare Workers has a free plan with limits; check current terms before deploying.
 
 ## Managing blog posts later
 
-Keep Eleventy as the static site generator. When the blog is ready, add posts as Markdown files and configure [Pages CMS](https://pagescms.org/docs/) with a `.pages.yml` at the repository root. Pages CMS edits files in GitHub; it does not replace Eleventy or require a separate content database. A change saved by the CMS can trigger a Cloudflare build and deploy. Review CMS access and service terms when setting it up.
+Keep Eleventy as the static site generator. When the blog is ready, add posts as Markdown files and configure [Pages CMS](https://pagescms.org/docs/) with a `.pages.yml` at the repository root. Pages CMS edits files in GitHub; it does not replace Eleventy or require a separate content database. A change committed through the CMS can trigger the GitHub Pages workflow. Review CMS access and service terms when setting it up.
 
 ## Content and publishing notes
 

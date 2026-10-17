@@ -12,12 +12,12 @@ permalink: /index.html
     <p class="hero-lede">A place for Duster owners to share real experience, useful knowledge and the road ahead.</p>
     <div class="button-row">
       <a class="button button-primary" href="{{ site.communityInvite }}" target="_blank" rel="noopener noreferrer">Join the WhatsApp community <span aria-hidden="true">↗</span></a>
-      <a class="button button-quiet" href="/knowledge/">Browse owner knowledge <span aria-hidden="true">→</span></a>
+      <a class="button button-quiet" href="{{ '/knowledge/' | url }}">Browse owner knowledge <span aria-hidden="true">→</span></a>
     </div>
     <p class="microcopy">Independent community · All Duster generations welcome</p>
   </div>
   <figure class="hero-photo">
-    <img src="/images/renault-duster-2026-key-visual-hd.jpg" alt="Renault India official image of the 2026 Duster on a gravel road" width="2560" height="1920" fetchpriority="high" decoding="async">
+    <img src="{{ '/images/renault-duster-2026-key-visual-hd.jpg' | url }}" alt="Renault India official image of the 2026 Duster on a gravel road" width="2560" height="1920" fetchpriority="high" decoding="async">
     <figcaption>Official Renault India image · <a href="https://www.renault.co.in/cars/renault-duster.html" target="_blank" rel="noopener noreferrer">New Duster</a></figcaption>
   </figure>
 </section>
@@ -34,7 +34,7 @@ permalink: /index.html
   <div class="section-wrap feature-grid">
     <div><p class="eyebrow">WhatsApp owner community</p><h2>Ask other owners.<br><em>Share what worked for you.</em></h2>
       <p>Talk about ownership, mileage, servicing, accessories and trips with people who understand the car.</p>
-      <a class="button button-light" href="/community/">About the community <span aria-hidden="true">→</span></a>
+      <a class="button button-light" href="{{ '/community/' | url }}">About the community <span aria-hidden="true">→</span></a>
     </div>
     <div class="feature-list">
       <div><span>01</span><p>General ownership questions</p></div>
@@ -46,21 +46,21 @@ permalink: /index.html
 
 <section class="photo-story" data-reveal>
   <figure class="photo-story-image">
-    <img src="/images/renault-duster-2026-reveal.webp" alt="Official Renault India image of the Duster interior" loading="lazy">
+    <img src="{{ '/images/renault-duster-2026-reveal.webp' | url }}" alt="Official Renault India image of the Duster interior" loading="lazy">
     <figcaption>Official Renault India image</figcaption>
   </figure>
   <div class="photo-story-copy">
     <p class="eyebrow">Built around the drive</p>
     <h2>Every Duster story<br><em>has a road behind it.</em></h2>
     <p>Share the route, the conditions, the small wins and the things you wish you had known sooner.</p>
-    <a class="text-link" href="/community/">Meet the community <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="{{ '/community/' | url }}">Meet the community <span aria-hidden="true">↗</span></a>
   </div>
 </section>
 
 <section class="section-wrap mileage-block" data-reveal>
   <div class="section-heading">
     <div><p class="eyebrow">A number without context is just a number</p><h2>Real-world mileage,<br><em>not a promise.</em></h2></div>
-    <a class="text-link" href="/knowledge/#mileage">See the reports <span aria-hidden="true">→</span></a>
+    <a class="text-link" href="{{ '/knowledge/#mileage' | url }}">See the reports <span aria-hidden="true">→</span></a>
   </div>
   <div class="mileage-summary"><span class="mileage-mark">↗</span>
     <p><strong>{{ site.mileageReports | length }} anonymized reports</strong> from very different vehicles and driving conditions. Compare like with like—and always note the measurement method.</p>
