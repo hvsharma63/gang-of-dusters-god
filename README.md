@@ -17,25 +17,9 @@ Build the static site into `dist/`:
 npm run build
 ```
 
-## Free hosting on GitHub Pages
+## Deploy on Netlify
 
-The included GitHub Actions workflow builds the Eleventy site into `dist/` and deploys it to GitHub Pages. The free `github.io` address does not require buying a domain. GitHub Pages on GitHub Free requires the repository to be public, so do not put private source material or credentials in this repository.
-
-1. Keep `Group Conversations/` private. It is excluded in `.gitignore`; do not remove that rule or upload the WhatsApp exports. Review the files being pushed before making the repository public.
-2. Create a **public** GitHub repository and push the site source. Keep any private chat exports and personal information out of the repository.
-3. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**.
-4. Push to the repository's default branch. The workflow in `.github/workflows/pages.yml` installs dependencies, builds the site, and deploys it. Pull requests build the site but do not publish it.
-5. After the workflow succeeds, find the published URL under **Settings → Pages**. A project repository uses `https://OWNER.github.io/REPOSITORY/`; a repository named `OWNER.github.io` uses `https://OWNER.github.io/`.
-
-The workflow sets Eleventy's path prefix automatically, so internal links and assets work under the repository URL. No custom domain or paid hosting feature is needed. GitHub Pages limits and terms can change; check GitHub's current documentation before publishing.
-
-Official setup and usage information:
-- [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart)
-- [GitHub Pages usage limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
-
-### Optional: deploy as a Cloudflare Worker
-
-For a Worker deployment instead, use `npm run build` as the build command and `npx wrangler deploy` as the deploy command. The checked-in `wrangler.jsonc` points Wrangler at Eleventy's `dist/` output. Cloudflare Workers has a free plan with limits; check current terms before deploying.
+Connect the GitHub repository to Netlify and deploy the default branch. The checked-in `netlify.toml` configures Netlify to run `npm run build` and publish Eleventy's `dist/` output. Keep `Group Conversations/` private; it is excluded in `.gitignore`, so do not remove that rule or upload the WhatsApp exports.
 
 ## Managing blog posts later
 
